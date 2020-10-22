@@ -1,0 +1,40 @@
+.convertParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  //border: 1px solid;
+  margin-top: 45px;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.input {
+  background-color: #f1f3f4;
+  box-shadow: 0px 1px 1px 1px rgb(185, 180, 173);
+  border: none;
+  height: 35px;
+}
+
+.select-box {
+    //width: 20px;
+  margin-top: 10px;
+  background-color: #f1f3f4;
+  box-shadow: 0px 1px 1px 1px rgb(185, 180, 173);
+  border: none;
+}
+
+.convertChild {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 560px;
+  //border: 1px solid;
+  //margin-top: 45px;
+}
