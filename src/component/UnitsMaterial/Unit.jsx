@@ -3,11 +3,7 @@ import "./Unit.scss";
 import { ReactComponent as Scale } from "../../Images&Logos/scale.svg";
 import { ReactComponent as Hot } from "../../Images&Logos/hot.svg";
 import { ReactComponent as Beaker } from "../../Images&Logos/beaker.svg";
-import {
-  lengthConversion,
-  tempretureConversion,
-  volumeConversion,
-} from "../../Redux/newIndex";
+import {lengthConversion, tempretureConversion, volumeConversion } from "../../Redux/newIndex";
 import { useDispatch } from "react-redux";
 
 export default function Unit() {

@@ -8,6 +8,7 @@ const initialState = {
   fahrenheit: "",
   litre : "",
   millilitre : "",
+  none : "",
 };
 
 export const UnitReducer = (state = initialState, action) => {
@@ -25,6 +26,7 @@ export const UnitReducer = (state = initialState, action) => {
         // ...state,
         celcius: action.payloadCelcius,
         fahrenheit: action.payloadFahrenheit,
+        none : action.payloadNone,
       };
 
     case VOLUME:
@@ -32,6 +34,7 @@ export const UnitReducer = (state = initialState, action) => {
         // ...state,
         litre: action.payloadLitre,
         millilitre: action.payloadMillilitre,
+        none : action.payloadNone,
       };
 
     default:

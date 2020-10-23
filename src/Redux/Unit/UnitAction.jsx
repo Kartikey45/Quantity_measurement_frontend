@@ -14,6 +14,7 @@ export const tempretureConversion = () => {
     type: TEMPRATURE,
     payloadCelcius: "Celcius",
     payloadFahrenheit: "Fahrenheit",
+    payloadNone : "None",
   };
 };
 
@@ -22,5 +23,6 @@ export const volumeConversion = () => {
       type: VOLUME,
       payloadLitre: "Litre",
       payloadMillilitre: "Millilitre",
+      payloadNone : "None",
     };
   };
