@@ -10,7 +10,6 @@ function App() {
     <Provider store={Store}>
       <BrowserRouter>
         <div className="App">
-          {/* <Dashboard/> */}
           <Route path="/" component={Dashboard} />
         </div>
       </BrowserRouter>

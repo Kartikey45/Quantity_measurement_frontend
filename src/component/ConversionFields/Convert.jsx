@@ -6,6 +6,11 @@ export default function Convert() {
   const inch = useSelector((state) => state.inch);
   const feet = useSelector((state) => state.feet);
   const yard = useSelector((state) => state.yard);
+  const celcius = useSelector((state) => state.celcius);
+  const fahrenheit = useSelector((state) => state.fahrenheit);
+  const litre = useSelector((state) => state.litre);
+  const millilitre = useSelector((state) => state.millilitre);
+  
 
   return (
     <div className="convertParent">
@@ -14,8 +19,8 @@ export default function Convert() {
           <div style={{ display: "flex" }}>From</div>
           <input type="text" className="input" />
           <select className="select-box">
-            <option>{inch}</option>
-            <option>{feet}</option>
+            <option>{inch}{celcius}{litre}</option>
+            <option>{feet}{fahrenheit}{millilitre}</option>
             <option>{yard}</option>
             {/* <option>select4</option> */}
           </select>
@@ -25,8 +30,8 @@ export default function Convert() {
           <div style={{ display: "flex" }}>To</div>
           <input type="text" className="input" />
           <select className="select-box">
-            <option>{inch}</option>
-            <option>{feet}</option>
+            <option>{inch}{celcius}{litre}</option>
+            <option>{feet}{fahrenheit}{millilitre}</option>
             <option>{yard}</option>
             {/* <option>select4</option> */}
           </select>

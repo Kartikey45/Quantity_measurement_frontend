@@ -1,2 +1,2 @@
-export {lengthConversion} from './Unit/UnitAction';
+export {lengthConversion, tempretureConversion, volumeConversion} from './Unit/UnitAction';
 
