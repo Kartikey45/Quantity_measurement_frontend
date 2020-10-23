@@ -1,36 +1,37 @@
 import React from "react";
 import "./Convert.scss";
+import { useSelector } from "react-redux";
 
-export default class Convert extends React.Component {
-  render() {
-    return (
-      <div className="convertParent">
+export default function Convert() {
+  const inch = useSelector((state) => state.inch);
+  const feet = useSelector((state) => state.feet);
+  const yard = useSelector((state) => state.yard);
 
-        <div className='convertChild'>
-          <div className="inputField">
-            <div style={{ display: "flex" }}>From</div>
-            <input type="text" className="input" />
-            <select className="select-box">
-              <option>select1</option>
-              <option>select2</option>
-              <option>select3</option>
-              <option>select4</option>
-            </select>
-          </div>
-
-          <div className="inputField">
-            <div style={{ display: "flex" }}>To</div>
-            <input type="text" className="input" />
-            <select className="select-box">
-              <option>select1</option>
-              <option>select2</option>
-              <option>select3</option>
-              <option>select4</option>
-            </select>
-          </div>
+  return (
+    <div className="convertParent">
+      <div className="convertChild">
+        <div className="inputField">
+          <div style={{ display: "flex" }}>From</div>
+          <input type="text" className="input" />
+          <select className="select-box">
+            <option>{inch}</option>
+            <option>{feet}</option>
+            <option>{yard}</option>
+            {/* <option>select4</option> */}
+          </select>
         </div>
-        
+
+        <div className="inputField">
+          <div style={{ display: "flex" }}>To</div>
+          <input type="text" className="input" />
+          <select className="select-box">
+            <option>{inch}</option>
+            <option>{feet}</option>
+            <option>{yard}</option>
+            {/* <option>select4</option> */}
+          </select>
+        </div>
       </div>
-    );
-  }
+    </div>
+  );
 }

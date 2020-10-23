@@ -3,8 +3,11 @@ import "./Unit.scss";
 import { ReactComponent as Scale } from "../../Images&Logos/scale.svg";
 import { ReactComponent as Hot } from "../../Images&Logos/hot.svg";
 import { ReactComponent as Beaker } from "../../Images&Logos/beaker.svg";
+import { lengthConversion } from "../../Redux/newIndex";
+import { useDispatch } from "react-redux";
 
 export default function Unit() {
+  const dispatch = useDispatch();
   return (
     <div className="unitParent">
       <div className="choosetype">
@@ -14,14 +17,17 @@ export default function Unit() {
       </div>
       <div className="unitChild">
         <div className="logo">
-          <div className="unitLogo">
+          <div className="unitLogo" onClick={() => {dispatch(lengthConversion())}} >
             <Scale />
+            <h6>Length</h6>
           </div>
           <div className="unitLogo">
             <Hot />
+            <h6>Temprature</h6>
           </div>
           <div className="unitLogo">
             <Beaker />
+            <h6>Volume</h6>
           </div>
         </div>
       </div>
