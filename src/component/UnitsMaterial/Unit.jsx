@@ -18,16 +18,16 @@ export default function Unit() {
       <div className="unitChild">
         <div className="logo">
           <div
-            className="unitLogo"
+            className="unitLogoLength"
             onClick={() => {
               dispatch(lengthConversion());
             }}
           >
-            <Scale />
+            <Scale  />
             <h6>Length</h6>
           </div>
           <div
-            className="unitLogo"
+            className="unitLogoTemprature"
             onClick={() => {
               dispatch(tempretureConversion());
             }}
@@ -36,7 +36,7 @@ export default function Unit() {
             <h6>Temprature</h6>
           </div>
           <div
-            className="unitLogo"
+            className="unitLogoVolume"
             onClick={() => {
               dispatch(volumeConversion());
             }}
