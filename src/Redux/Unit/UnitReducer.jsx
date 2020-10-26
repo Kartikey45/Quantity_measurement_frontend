@@ -9,32 +9,38 @@ const initialState = {
   litre : "",
   millilitre : "",
   none : "",
+  // length : ["Inch","Feet","Yard",],
+  // temprature : ["Celcius","Fahrenheit",],
+  // volume : ["Litre","Millilitre"]
 };
 
 export const UnitReducer = (state = initialState, action) => {
   switch (action.type) {
     case LENGTH:
       return {
-        // ...state,
+         //...state,
         inch: action.payloadInch,
         feet: action.payloadFeet,
         yard: action.payloadYard,
+        // length : state.length,
       };
 
     case TEMPRATURE:
       return {
-        // ...state,
+         //...state,
         celcius: action.payloadCelcius,
         fahrenheit: action.payloadFahrenheit,
         none : action.payloadNone,
+        //temprature : state.temprature
       };
 
     case VOLUME:
       return {
-        // ...state,
+         //...state,
         litre: action.payloadLitre,
         millilitre: action.payloadMillilitre,
         none : action.payloadNone,
+        //volume : state.volume
       };
 
     default:

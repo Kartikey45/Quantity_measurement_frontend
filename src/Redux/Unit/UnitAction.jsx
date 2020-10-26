@@ -1,5 +1,6 @@
 import { LENGTH, TEMPRATURE, VOLUME } from "./UnitTypes";
 
+
 export const lengthConversion = () => {
   return {
     type: LENGTH,
@@ -12,7 +13,7 @@ export const lengthConversion = () => {
 export const tempretureConversion = () => {
   return {
     type: TEMPRATURE,
-    payloadCelcius: "Celcius",
+    payloadCelcius: "Celsius",
     payloadFahrenheit: "Fahrenheit",
     payloadNone : "None",
   };
