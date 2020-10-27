@@ -9,6 +9,9 @@ const initialState = {
   litre : "",
   millilitre : "",
   none : "",
+  lengthColor : "",
+  tempColor : "",
+  volColor : "",
   // length : ["Inch","Feet","Yard",],
   // temprature : ["Celcius","Fahrenheit",],
   // volume : ["Litre","Millilitre"]
@@ -22,6 +25,7 @@ export const UnitReducer = (state = initialState, action) => {
         inch: action.payloadInch,
         feet: action.payloadFeet,
         yard: action.payloadYard,
+        lengthColor : action.payloadLengthColor,
         // length : state.length,
       };
 
@@ -31,6 +35,7 @@ export const UnitReducer = (state = initialState, action) => {
         celcius: action.payloadCelcius,
         fahrenheit: action.payloadFahrenheit,
         none : action.payloadNone,
+        tempColor : action.payloadTempColor,
         //temprature : state.temprature
       };
 
@@ -40,6 +45,7 @@ export const UnitReducer = (state = initialState, action) => {
         litre: action.payloadLitre,
         millilitre: action.payloadMillilitre,
         none : action.payloadNone,
+        volColor : action.payloadVolColor,
         //volume : state.volume
       };
 

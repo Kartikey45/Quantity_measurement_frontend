@@ -7,6 +7,7 @@ export const lengthConversion = () => {
     payloadInch: "Inch",
     payloadFeet: "Feet",
     payloadYard: "Yard",
+    payloadLengthColor: "#b3ffcc",
   };
 };
 
@@ -16,6 +17,7 @@ export const tempretureConversion = () => {
     payloadCelcius: "Celsius",
     payloadFahrenheit: "Fahrenheit",
     payloadNone : "None",
+    payloadTempColor : "#ffb3b3",
   };
 };
 
@@ -25,5 +27,6 @@ export const volumeConversion = () => {
       payloadLitre: "Litre",
       payloadMillilitre: "Millilitre",
       payloadNone : "None",
+      payloadVolColor : "#dab3ff"
     };
   };

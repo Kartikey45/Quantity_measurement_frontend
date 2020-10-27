@@ -46,6 +46,7 @@ export default function Convert() {
           <div style={{ display: "flex" }}>From</div>
           <input type="text" className="input" onChange={(event) => {change(event.target.value)}} />
           <select className="select-box" value={unit1} onChange={(event) => setUnit1(event.target.value)} >
+            {/* <option>First Unit</option> */}
             <option>{feet}{fahrenheit}{litre}</option>
             <option>{inch}{celcius}{millilitre}</option>
             <option>{yard}{none}</option>
@@ -56,6 +57,7 @@ export default function Convert() {
           <div style={{ display: "flex" }}>To</div>
           <input type="text" value={result} className="input" />
           <select className="select-box" value={unit2} onChange={(event) => setUnit2(event.target.value)} >
+            {/* <option>Second Unit</option> */}
             <option>{inch2}{celcius2}{millilitre2}</option>
             <option>{feet2}{fahrenheit2}{litre2}</option>
             <option>{yard2}{none}</option>

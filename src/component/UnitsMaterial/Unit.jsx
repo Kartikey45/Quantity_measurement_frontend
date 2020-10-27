@@ -4,9 +4,13 @@ import { ReactComponent as Scale } from "../../Images&Logos/scale.svg";
 import { ReactComponent as Hot } from "../../Images&Logos/hot.svg";
 import { ReactComponent as Beaker } from "../../Images&Logos/beaker.svg";
 import {lengthConversion, tempretureConversion, volumeConversion } from "../../Redux/newIndex";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function Unit() {
+  const lengthColor = useSelector((state) => state.lengthColor);
+  const tempColor = useSelector((state) => state.tempColor );
+  const volColor = useSelector((state) => state.volColor );
+
   const dispatch = useDispatch();
   return (
     <div className="unitParent">
@@ -18,7 +22,7 @@ export default function Unit() {
       <div className="unitChild">
         <div className="logo">
           <div
-          // style={{ backgroundColor : '#f1f3f4' }}
+           style={{ backgroundColor : lengthColor}}
             className="unitLogoLength"
             onClick={() => {
               dispatch(lengthConversion());
@@ -28,7 +32,7 @@ export default function Unit() {
             <h6>Length</h6>
           </div>
           <div
-          // style={{ backgroundColor : '#f1f3f4' }}
+           style={{ backgroundColor : tempColor }}
             className="unitLogoTemprature"
             onClick={() => {
               dispatch(tempretureConversion());
@@ -38,7 +42,7 @@ export default function Unit() {
             <h6>Temprature</h6>
           </div>
           <div
-          // style={{ backgroundColor : '#f1f3f4' }}
+           style={{ backgroundColor : volColor }}
             className="unitLogoVolume"
             onClick={() => {
               dispatch(volumeConversion());
