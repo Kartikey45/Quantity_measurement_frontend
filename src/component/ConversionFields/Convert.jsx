@@ -6,6 +6,7 @@ import UnitService from "../../services/UnitService"
 export default function Convert() {
   const [unit1, setUnit1] = useState("");
   const [unit2, setUnit2] = useState("");
+  const [result, setResult] = useState("");
 
   const inch = useSelector((state) => state.inch);
   const inch2 = useSelector((state) => state.inch);
@@ -34,6 +35,7 @@ export default function Convert() {
     UnitService.Conversion(Data)
     .then((data) => {
       console.log(data);
+      setResult(data.data.data.result)
     })
   }
 
@@ -52,7 +54,7 @@ export default function Convert() {
 
         <div className="inputField">
           <div style={{ display: "flex" }}>To</div>
-          <input type="text" className="input" />
+          <input type="text" value={result} className="input" />
           <select className="select-box" value={unit2} onChange={(event) => setUnit2(event.target.value)} >
             <option>{inch2}{celcius2}{millilitre2}</option>
             <option>{feet2}{fahrenheit2}{litre2}</option>
