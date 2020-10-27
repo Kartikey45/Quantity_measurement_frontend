@@ -1,2 +1,4 @@
-export {lengthConversion, tempretureConversion, volumeConversion} from './Unit/UnitAction';
+export {lengthConversion, tempretureConversion, volumeConversion, firstValueChange, secondValueChange, 
+    lengthColorToggles, lengthColorOffToggles, volumeColorOffToggles, volumeColorToggles,
+    temperatureColorToggles, temperatureColorOffToggles } from './Unit/UnitAction';
 
