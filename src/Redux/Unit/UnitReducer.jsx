@@ -3,20 +3,7 @@ import { LENGTH, TEMPRATURE, VOLUME,  SECONDFUNCTION, FIRSTFUNCTION,
    LENGTHTOGGLEOFF, VOLUMETOGGLEOFF, TEMPERATURETOGGLEOFF } from "./UnitTypes";
 
 const initialState = {
-  // inch: "",
-  // feet: "",
-  // yard: "",
-  // celcius: "",
-  // fahrenheit: "",
-  // litre : "",
-  // millilitre : "",
-  // none : "",
-  // lengthColor : "",
-  // tempColor : "",
-  // volColor : "",
-  // length : ["Inch","Feet","Yard",],
-  // temprature : ["Celcius","Fahrenheit",],
-  // volume : ["Litre","Millilitre"]
+  
     unit1: ['Inch', 'Feet', 'Yard'],
     unit2: ['Celsius', 'Fahrenheit'],
     unit3: ['Litre', 'Millilitre'],
@@ -27,6 +14,7 @@ const initialState = {
     lengthStatus: true,
     volumeStatus: false,
     temperatureStatus: false,
+    
     lengthColorToggle: false,
     volumeColorToggle: false,
     temperatureColorToggle: false,
@@ -37,11 +25,7 @@ export const UnitReducer = (state = initialState, action) => {
     case LENGTH:
       return {
          ...state,
-        // inch: action.payloadInch,
-        // feet: action.payloadFeet,
-        // yard: action.payloadYard,
-        //lengthColor : action.payloadLengthColor,
-        // length : state.length,
+        
         options : state.unit1,
         firstValue : 'Inch',
         secondValue : 'Inch',
@@ -57,11 +41,7 @@ export const UnitReducer = (state = initialState, action) => {
     case TEMPRATURE:
       return {
          ...state,
-        // celcius: action.payloadCelcius,
-        // fahrenheit: action.payloadFahrenheit,
-        // none : action.payloadNone,
-        //tempColor : action.payloadTempColor,
-        //temprature : state.temprature
+        
         options : state.unit2,
         firstValue : 'Celsius',
         secondValue : 'Celsius',
@@ -77,11 +57,7 @@ export const UnitReducer = (state = initialState, action) => {
     case VOLUME:
       return {
          ...state,
-        // litre: action.payloadLitre,
-        // millilitre: action.payloadMillilitre,
-        // none : action.payloadNone,
-        //volColor : action.payloadVolColor,
-        //volume : state.volume
+       
         options : state.unit3,
         firstValue : 'Litre',
         secondValue : 'Litre',

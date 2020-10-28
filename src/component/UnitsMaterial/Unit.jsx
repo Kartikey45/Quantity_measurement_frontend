@@ -19,8 +19,7 @@ export default function Unit() {
     const lengthColorToggle = useSelector((state) => state.lengthColorToggle);
     const volumeColorToggle = useSelector((state) => state.volumeColorToggle);
     const temperatureColorToggle = useSelector((state) => state.temperatureColorToggle);
-    // const volumeColorOffToggle =  useSelector((state) => state.volumeColorOffToggles);
-    // const volumeColorToggle =  useSelector((state) => state.volumeColorToggles);
+    
 
   const dispatch = useDispatch();
 
@@ -35,7 +34,7 @@ export default function Unit() {
         <div className="logo">
           <div
            style={{ backgroundColor : lengthColor}}
-            // className="unitLogoLength"
+            
             className={(lengthColorToggle || lengthStatus) ? "LengthOverOn" : "Image1"}
             onClick={() => {
               dispatch(lengthConversion());
@@ -52,7 +51,7 @@ export default function Unit() {
           </div>
           <div
            style={{ backgroundColor : tempColor }}
-            //className="unitLogoTemprature"
+            
             className={temperatureColorToggle || temperatureStatus ? "TempOverOn" : "Image2"}
             onClick={() => {
               dispatch(tempretureConversion());
@@ -69,7 +68,7 @@ export default function Unit() {
           </div>
           <div
            style={{ backgroundColor : volColor }}
-            //className="unitLogoVolume"
+           
             className={ volumeColorToggle || volumeStatus ? "VolumeOverOn" : "Image3"}
             onClick={() => {
               dispatch(volumeConversion());
