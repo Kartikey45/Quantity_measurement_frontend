@@ -11,6 +11,13 @@ class UnitService {
       let url = baseUrl + "AddMeasuredQuantity";
       return this.axiosService.post(url, data);
     }
+
+    getConversions(){
+      let url = baseUrl + "ViewQuantities";
+      console.log(url);
+      return this.axiosService.get(url);
+      
+    }
 }
 
 export default new UnitService();

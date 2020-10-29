@@ -1,6 +1,16 @@
 import { LENGTH, TEMPRATURE, VOLUME, SECONDFUNCTION, FIRSTFUNCTION,  LENGTHTOGGLE, VOLUMETOGGLE, TEMPERATURETOGGLE,
-  LENGTHTOGGLEOFF, VOLUMETOGGLEOFF, TEMPERATURETOGGLEOFF  } from "./UnitTypes";
+  LENGTHTOGGLEOFF, VOLUMETOGGLEOFF, TEMPERATURETOGGLEOFF, PUSHTOHISTORY  } from "./UnitTypes";
+// import UnitService from "../../services/UnitService"; 
 
+// export const fetchHistory = () => {
+//   return {
+//     UnitService.get(Data)
+//     .then((data) => {
+//       console.log(data);
+//       setResult(data.data.data.result)
+//     })
+//   }
+// }
 
 export const lengthConversion = () => {
   return {
