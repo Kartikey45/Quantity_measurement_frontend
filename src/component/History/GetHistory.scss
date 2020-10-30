@@ -1,7 +1,8 @@
+$padding : 20px;
 
 .historyOuterdiv{
     display: flex;
-    padding: 20px;
+    padding: $padding;
 }
 
 .navBar{
